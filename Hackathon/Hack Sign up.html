@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+   .form-group {
+     display: flex;
+     align-items: center;
+    }
+
+    .form-group label{
+     width: 100px;
+     align-items: right;
+     margin-right: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      min-width: 40%;
+      min-height: 6%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 128px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="Email-id">Email-id:</label>
+        <input type="text" id="Email-id" name="Email-id" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender"> Male
+        <input type="radio" id="gender" name="gender"> Female
+     </div>
+
+    <div class="form-group">      
+       <label for="DateOfBirth">Date Of Birth:</label>
+       <input type="date" id="dob" name="dob">
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>
